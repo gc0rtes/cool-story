@@ -13,6 +13,7 @@ export default function SpaceCard(props) {
     >
       <h1>{props.title}</h1>
       <p>{props.description}</p>
+      {/*in order to reuse the card, we made a option tho show link/button */}
       {props.showLink ? (
         <Link to={`/spaces/${props.id}`}>
           <Button>Visit space</Button>
